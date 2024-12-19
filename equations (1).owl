@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl/"
+     xml:base="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:suraj="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#hasSolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#hasSolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Solution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#hasVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#hasVariable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#coefficientValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#coefficientValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#exponentValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#exponentValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#solutionValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#solutionValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#variableCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#variableCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Cubic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Cubic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Exponential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Exponential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Linear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Linear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Quadratic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Quadratic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Solution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Variable"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#cubic1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#cubic1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Cubic"/>
+        <suraj:hasSolution rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#solution1"/>
+        <suraj:coefficientValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</suraj:coefficientValue>
+        <suraj:exponentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</suraj:exponentValue>
+        <suraj:variableCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</suraj:variableCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#exponential1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#exponential1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Exponential"/>
+        <suraj:hasSolution rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#solution1"/>
+        <suraj:coefficientValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</suraj:coefficientValue>
+        <suraj:solutionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</suraj:solutionValue>
+        <suraj:variableCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</suraj:variableCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#linear1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#linear1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Linear"/>
+        <suraj:hasSolution rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#linear1"/>
+        <suraj:coefficientValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</suraj:coefficientValue>
+        <suraj:solutionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5</suraj:solutionValue>
+        <suraj:variableCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</suraj:variableCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#quadratic1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#quadratic1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Quadratic"/>
+        <suraj:hasSolution rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#solution1"/>
+        <suraj:coefficientValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</suraj:coefficientValue>
+        <suraj:exponentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</suraj:exponentValue>
+        <suraj:solutionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1</suraj:solutionValue>
+        <suraj:variableCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</suraj:variableCount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#solution1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#solution1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Solution"/>
+        <suraj:solutionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5</suraj:solutionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#variable1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#variable1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abiskaracharya_ysj/ontologies/2024/11/suraj.owl#Variable"/>
+        <suraj:solutionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.5</suraj:solutionValue>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
